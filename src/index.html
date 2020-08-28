@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>HTML Form</title>
+    <link href="./style.css" rel="stylesheet">
+  </head>
+  <body>
+    <script src="./main.js" type="text/javascript"></script>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      onsubmit="onSubmit()"
+      method="POST"
+      autocomplete="off">
+      <div class="section">
+        <fieldset>
+          <legend>Personal information</legend>
+          <div class="elements">
+            <label for="sname">Surname:</label>
+            <input id="sname" name="sname"
+                   type="text" value=" ">
+          </div>
+          <div class="elements">
+            <label for="name">Name:</label>
+            <input id="name" name="name"
+                   type="text" value=" ">
+          </div>
+          <div class="elements">
+            <lable for="age">How old are You?</lable>
+            <input id="age" name="age"
+                   type="number" value="12">
+          </div>
+          <div class="elements">
+            <lable for="date of birth">Full date of birth:</lable>
+            <input id-id="date of birth" id="mm/ dd/ yyyy"
+                   name="date of birth" type="date">
+          </div>
+          <div class="elements">
+            <lable for="text">I accept the term of the agreement</lable>
+            <input type="checkbox">
+          </div>
+        </fieldset>
+      </div>
+      <div class="section">
+        <fieldset>
+          <legend>Registration</legend>
+          <div class="elements">
+            <label for="email">E-mail:</label>
+            <input id="email" name="email"
+              type="email" placeholder="email@example.com">
+          </div>
+          <div class="elements">
+            <lable for="password">Password:</lable>
+            <input id="password" name="password"
+                   type="text" value=" ">
+          </div>
+        </fieldset>
+      </div>
+      <div class="section">
+        <fieldset>
+          <legend>An interesting fact about you!</legend>
+          <div class="elements">
+            <label for="answer">Do you love cats?</label>
+            <input type="radio" name="answer"
+                   value="Yes">Yes
+            <input type="radio" name="answer"
+                   value="No">No
+          </div>
+          <div class="elements">
+            <label for="favcolor">What is your favorite color?</label>
+            <input id="favcolor" name="favcolor"
+                   type="color" value="black">
+          </div>
+          <div class="elements">
+            <label for="appt">What time do you go to bed?</label>
+            <input id="appt" name="appt"
+                   type="time">
+          </div>
+          <div class="elements">
+            <label for="cars">What are your favorite brand of cars?</label>
+            <select id="cars" name="cars"
+                    size="3">
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+            </select>
+          </div>
+          <div class="elements">
+            <label for="myRange">How do you rate our work?</label>
+            <input class="slider" id="myRange"
+                   max="100" min="1"
+                   type="range" value="50">
+          </div>
+        </fieldset>
+      </div>
+      <div class="section">
+        <fieldset>
+          <legend>Additional info:</legend>
+          <div class="elements">
+            <label for="comment">Comments:</label>
+            <textarea id="comment" name="comments">
+            </textarea>
+          </div>
+          <div class="elements">
+            <label for="answer">Would you recommend us?</label>
+            <select answer="answer" id="answer">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+          </div>
+        </fieldset>
+      </div>
+    </form>
+    <div class="submit-button">
+      <input type="submit" value="Submit">
+    </div>
+  </body>
+</html>
