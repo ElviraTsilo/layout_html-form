@@ -17,105 +17,183 @@
       autocomplete="off">
       <div class="section">
         <fieldset>
-          <legend>Personal information</legend>
+          <legend>
+            Personal information
+          </legend>
           <div class="elements">
-            <label for="sname">Surname:</label>
-            <input id="sname" name="sname"
-                   type="text" value=" ">
+            <label for="sname">Surname:
+              <input
+                id="sname"
+                name="sname"
+                type="text"
+                value=" "
+              >
+            </label>
           </div>
           <div class="elements">
-            <label for="name">Name:</label>
-            <input id="name" name="name"
-                   type="text" value=" ">
+            <label for="name">Name:
+              <input
+                id="name"
+                name="name"
+                type="text"
+                value=" "
+              >
+            </label>
           </div>
           <div class="elements">
-            <lable for="age">How old are You?</lable>
-            <input id="age" name="age"
-                   type="number" value="12">
+            <lable for="age">How old are You?
+              <input
+                id="age"
+                name="age"
+                type="number"
+                value="12"
+                min="0"
+                max="100"
+              >
+            </lable>
           </div>
           <div class="elements">
-            <lable for="date of birth">Full date of birth:</lable>
-            <input id-id="date of birth" id="mm/ dd/ yyyy"
-                   name="date of birth" type="date">
+            <lable for="date of birth">Full date of birth:
+              <input
+                id-id="date of birth"
+                id="mm/ dd/ yyyy"
+                name="date of birth"
+                type="date"
+              >
+            </lable>
           </div>
           <div class="elements">
-            <lable for="text">I accept the term of the agreement</lable>
-            <input type="checkbox">
-          </div>
-        </fieldset>
-      </div>
-      <div class="section">
-        <fieldset>
-          <legend>Registration</legend>
-          <div class="elements">
-            <label for="email">E-mail:</label>
-            <input id="email" name="email"
-              type="email" placeholder="email@example.com">
-          </div>
-          <div class="elements">
-            <lable for="password">Password:</lable>
-            <input id="password" name="password"
-                   type="text" value=" ">
-          </div>
-        </fieldset>
-      </div>
-      <div class="section">
-        <fieldset>
-          <legend>An interesting fact about you!</legend>
-          <div class="elements">
-            <label for="answer">Do you love cats?</label>
-            <input type="radio" name="answer"
-                   value="Yes">Yes
-            <input type="radio" name="answer"
-                   value="No">No
-          </div>
-          <div class="elements">
-            <label for="favcolor">What is your favorite color?</label>
-            <input id="favcolor" name="favcolor"
-                   type="color" value="black">
-          </div>
-          <div class="elements">
-            <label for="appt">What time do you go to bed?</label>
-            <input id="appt" name="appt"
-                   type="time">
-          </div>
-          <div class="elements">
-            <label for="cars">What are your favorite brand of cars?</label>
-            <select id="cars" name="cars"
-                    size="3">
-              <option value="BMW">BMW</option>
-              <option value="Audi">Audi</option>
-              <option value="Lada">Lada</option>
-            </select>
-          </div>
-          <div class="elements">
-            <label for="myRange">How do you rate our work?</label>
-            <input class="slider" id="myRange"
-                   max="100" min="1"
-                   type="range" value="50">
+            <lable for="text">I accept the term of the agreement
+              <input
+                type="checkbox"
+              >
+            </lable>
           </div>
         </fieldset>
       </div>
       <div class="section">
         <fieldset>
-          <legend>Additional info:</legend>
+          <legend>Registration
+          </legend>
           <div class="elements">
-            <label for="comment">Comments:</label>
-            <textarea id="comment" name="comments">
-            </textarea>
+            <label for="email">E-mail:
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="email@example.com">
+            </label>
           </div>
           <div class="elements">
-            <label for="answer">Would you recommend us?</label>
-            <select answer="answer" id="answer">
-              <option value="yes">yes</option>
-              <option value="no">no</option>
-            </select>
+            <lable for="password">Password:
+              <input
+                id="password"
+                name="password"
+                type="text"
+                value=" "
+              >
+            </lable>
+          </div>
+        </fieldset>
+      </div>
+      <div class="section">
+        <fieldset>
+          <legend>
+            An interesting fact about you!
+          </legend>
+          <div class="elements">
+            <label for="answer">Do you love cats?
+              <input
+                type="radio"
+                name="answer"
+                value="Yes">Yes
+            </label>
+            <label for="answer">Doy you love cats?
+              <input
+                type="radio"
+                name="answer"
+                value="No">No
+            </label>
+          </div>
+          <div class="elements">
+            <label for="favcolor">What is your favorite color?
+              <input
+                id="favcolor"
+                name="favcolor"
+                type="color"
+                value="black"
+              >
+            </label>
+          </div>
+          <div class="elements">
+            <label for="appt">What time do you go to bed?
+              <input
+                id="appt"
+                name="appt"
+                type="time"
+              >
+            </label>
+          </div>
+          <div class="elements">
+            <label for="cars">What are your favorite brand of cars?
+              <select
+                id="cars"
+                name="cars"
+                multiple
+              >
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Lada">Lada</option>
+              </select>
+            </label>
+          </div>
+          <div class="elements">
+            <label for="myRange">How do you rate our work?
+              <input
+                class="slider"
+                id="myRange"
+                max="100"
+                min="1"
+                type="range"
+                value="0"
+              >
+            </label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="section">
+        <fieldset>
+          <legend>
+            Additional info:
+          </legend>
+          <div class="elements">
+            <label for="comment">Comments:
+              <textarea
+                id="comment"
+                name="comments"
+              >
+              </textarea>
+            </label>
+          </div>
+          <div class="elements">
+            <label for="answer">Would you recommend us?
+              <select
+                answer="answer"
+                id="answer"
+              >
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+              </select>
+            </label>
           </div>
         </fieldset>
       </div>
     </form>
     <div class="submit-button">
-      <input type="submit" value="Submit">
+      <input
+        type="submit"
+        value="Submit"
+      >
     </div>
   </body>
 </html>
