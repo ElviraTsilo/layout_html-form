@@ -6,7 +6,7 @@
   margin-bottom: 20px;
 }
 
-div:last-child {
+.elements:last-child {
   margin-bottom: 0;
 }
 
